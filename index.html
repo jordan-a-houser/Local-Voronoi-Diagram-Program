@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body style="font-family: arial, helvatica, sans-serif;">
+    <script src="sketch.js"></script>
+
+  <b>Please input number of sites: </b>
+  <input id="sites" value="100" type="number" min="10" max="150" size="3">&nbsp;&nbsp;
+  <b>Metric: </b>
+  <select id="mt">
+    <option value="1" selected="">Euclidean</option>
+    <option value="2">Manhattan</option>
+    <option value="3">Minkovski</option>
+  </select>&nbsp;
+  
+   <b>Color: </b>
+  <select id="clr">
+    <option value="1" selected="">random</option>
+    <option value="2">blue-jewel</option>
+    <option value="3">coral</option>
+    <option value="4">red-blue</option>
+    <option value="5">green-blue</option>
+    <option value="6">seagreen</option>
+    <option value="7">light-blue</option>
+    <option value="8">dark-green</option>
+    <option value="9">orange</option>
+    <option value="10">dark-red</option>
+    <option value="11">dark-blue</option>
+    <option value="12">blue-purple</option>
+  </select>&nbsp;
+
+
+  <b>Pattern: </b>
+  <select id="sym">
+    <option value="1" selected="">p1 (o)</option>
+    <option value="2">p2 (2222)</option>
+    <option value="3">pm (**)</option>
+    <option value="4">pg (xx)</option>
+    <option value="5">pmm (*2222)</option>
+    <option value="6">pmg (22*)</option>
+    <option value="7">p4 (442)</option>
+    <option value="8">p4m (*442)</option>
+    <option value="9">p4g (4*2)</option>
+   
+  </select>&nbsp;
+  <input type="button" value="Plot it!" onclick="pVoronoiD();">&nbsp;&nbsp;
+  <h3>Voronoi diagram</h3>
+  <canvas id="cvsId" width="640" height="640" style="border: 2px inset;"></canvas>
+
+  
+
+</body></html>
