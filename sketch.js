@@ -114,7 +114,7 @@ function pVoronoiD() {
   var ctx=cvs.getContext("2d");
   var w=cvs.width, h=cvs.height;
   var x=y=d=dm=j=0, w1=w-2, h1=h-2;
-  var n=document.getElementById("sites").value;
+  var n=document.getElementById("points").value;
   var mt=document.getElementById("mt").value;
   var clr=document.getElementById("clr").value;
   var sym=document.getElementById("sym").value;
